@@ -15,3 +15,7 @@ DynDNS services transmit a changing IP address to a static domain name to enable
   - Username and password according to .htpasswd
 - Done, your router regulary updates the IP to the ip.txt file on your server
 
+## Usage
+Just call https://yourdomain.xxx/ and you will be forwared to the IP address of your router. Probably you have to add a port on the end if you have portforwarding. Anyhow, you know the IP adress of your router from everywhere on the world.
+
+Of course the last step is a bit geeky, but my hosting provider wont allow me to update the DNS zone files
