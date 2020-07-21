@@ -1,0 +1,22 @@
+#
+# you may add a htpasswd to allow calling upd.php only with credentials
+# 1. create .htpasswd more information here: https://www.web2generators.com/apache-tools/htpasswd-generator
+# 2. adjust AuthUserFile
+# 3. uncomment next lines
+
+# AuthUserFile "/home/path_to/.htpasswd"
+# AuthType Basic
+# AuthName "homeDNS"
+# require valid-user
+
+
+
+# Access Rules, wich files can be accessed
+<Files "ip.txt">  
+  Require all denied
+</Files>
+
+<Files "index.php">
+    Satisfy Any
+    Allow from all
+</Files>
